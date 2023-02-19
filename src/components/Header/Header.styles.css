@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  height: 90px; 
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.header.dark {
+  background: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: 60px;
+  }
+}
+

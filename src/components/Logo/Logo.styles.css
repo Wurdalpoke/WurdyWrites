@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bevan&display=swap');
+
+.bevan {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(255, 92, 92);
+    font-family: Bevan, sans-serif;
+    cursor: pointer;
+}
+  
+.berkshireswash {
+    position: absolute;
+    top: 1.5rem;
+    left: 8rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(255, 92, 92);
+    font-family: Berkshire Swash, sans-serif;
+    cursor: pointer;
+}
+
+.berkshireswash.dark {
+    color: rgb(150, 65, 255);
+}
+
+.bevan.dark {
+    color: rgb(150, 65, 255);
+}
+
+@media screen and (max-width: 480px) {
+    .bevan {
+        font-size: 1rem;
+        top: 1rem;
+    }
+    .berkshireswash {
+        font-size: 1.2rem;
+        left: 5.5rem;
+        top: 1rem;
+    }
+}
