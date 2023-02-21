@@ -176,7 +176,7 @@ class App extends Component {
                 "The crisis was so bad that by 1932, one-third of the German population was unemployed.",
                 "The Germans got so sick and tired of the reparations, economic crises, and poverty in general that they made Hitler their chancellor in 1933.",
                 "",
-                "But that's a story for another time."
+                "But that's a tale for another time."
               ]],
               ["What about the Janitor who made $8 million by investing in stocks?", ["Investing"] , [
                 'In 2014, a former janitor at JCPenney (a large supermarket chain in the US), made the headlines when he died.',
