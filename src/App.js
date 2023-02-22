@@ -13,6 +13,7 @@ import LinkedInIcon from './assets/linkedin.png';
 import LinkedInIcon1 from './assets/linkedin1.png';
 import TwitterIcon from './assets/twitter-sign.png';
 import TwitterIcon1 from './assets/twitter.png';
+import Logo from './components/Logo/Logo.component';
 
 class App extends Component {
   constructor() {
@@ -177,7 +178,7 @@ class App extends Component {
                 "The Germans got so sick and tired of the reparations, economic crises, and poverty in general that they made Hitler their chancellor in 1933.",
                 "",
                 "But that's a tale for another time."
-              ]],
+              ], 'https://encyclopedia.ushmm.org/images/large/634a1702-6650-4fe4-9d21-9ebcef440245.jpg'],
               ["What about the Janitor who made $8 million by investing in stocks?", ["Investing"] , [
                 'In 2014, a former janitor at JCPenney (a large supermarket chain in the US), made the headlines when he died.',
                 'News channels reported that he donated 6 million dollars to his town hospital alone. These were followed by list of inheritors including friends and family.',
@@ -303,7 +304,7 @@ class App extends Component {
                 '',
                 'I have endeavoured to provide food for your thought with this blog; not to declare a way of life.',
                 'My own way of life is a work in progress, so it would be presumptuous of me to dictate one for you.'
-              ]],
+              ], 'https://pbs.twimg.com/media/CApJZXfVEAAO0Es.jpg'],
               ["Why don’t people invest in Diamond or Platinum over Gold?", ["Economy", "Investing"] , [
                 'Someone asked me recently, why don’t people invest in Diamond or Platinum? They are more valuable than Gold.',
                 'I had never given this much thought before.', 
@@ -380,7 +381,7 @@ class App extends Component {
                 'And if one day industries find a substitute for Platinum? Bye-bye investment.',
                 'So my advice, don’t. But what do I know.',
                 'People might find even more applications and Platinum might go up 10 fold in the coming 10 years. I’ll leave that up to you.'
-              ]],
+              ], 'https://images.unsplash.com/photo-1624365168987-9b8c0ff8333f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'],
               ["Who am I?", ["Who Am I"], [
                 'Hello! I am the Wurdy of WurdyWrites.',
                 'I won’t bore you with the minute details about me; you can find everything here.',
@@ -392,7 +393,7 @@ class App extends Component {
                 'The only thing I can tell you is that whatever you find on this site, it’s written with good conscience and some thought.',
                 'So, feel free to click on any category you feel interested in, or see all posts through the menu and go through whichever one catches your fancy.',
                 'I look forward to reading your thoughts, critique, and any requests for future posts (except philosophy, especially ancient greek) in the comments section.'
-              ]]
+              ], Logo]
       ],
       dropDownHidden: true,
       postFontSize: 20,

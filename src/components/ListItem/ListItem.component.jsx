@@ -4,9 +4,10 @@ import Logo from '../../../src/assets/logo192.png';
 import { Link } from "react-router-dom";
 
 const ListItem = ({prop, mode}) => {
+    console.log(prop);
     return(
     <div className={`list-item ${mode==='dark' ? 'dark' : ''}`}>
-        <img src={Logo}></img>
+        <img src={prop[0]==='Who am I?' ? Logo : prop[3]}></img>
         <div className={`list-item-desc ${mode==='dark' ? 'dark' : ''}`}>
             <p className="list-item-title"><Link to={`/post/${prop[0]}`}>{prop[0]}</Link></p>
             <div className="list-item-solid-separator"></div>
