@@ -16,6 +16,7 @@ img {
     align-self: center;
     padding: 2vw;
     height: 16vw;
+    opacity: 0.9;
 }
 
 .list-item-desc {

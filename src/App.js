@@ -393,13 +393,13 @@ class App extends Component {
                 'The only thing I can tell you is that whatever you find on this site, it’s written with good conscience and some thought.',
                 'So, feel free to click on any category you feel interested in, or see all posts through the menu and go through whichever one catches your fancy.',
                 'I look forward to reading your thoughts, critique, and any requests for future posts (except philosophy, especially ancient greek) in the comments section.'
-              ], Logo]
+              ]]
       ],
       dropDownHidden: true,
       postFontSize: 20,
-      postFontFamily: 'Berkshire Swash',
+      postFontFamily: 'Verdana',
       fontFamilySelectOpen: false,
-      fontFamilyOptionSelected: 'Berkshire Swash',
+      fontFamilyOptionSelected: 'Verdana',
       postLineHeight: 25,
       postFontWeight: 'lighter',
       mode: 'light'
@@ -407,7 +407,7 @@ class App extends Component {
   }
 
   ToggleOverlay = () => {this.state.overlayClass==='overlay overlay-slide-left' ? (this.setState({overlayClass: 'overlay overlay-slide-right', slideInOrOut: 'in'})) : (this.setState({overlayClass: 'overlay overlay-slide-left', slideInOrOut: 'out'}))}
-  ToggleDropDownHidden = () => {this.state.dropDownHidden ? this.setState({dropDownHidden: false}) : this.setState({dropDownHidden: true})}
+  ToggleDropDownHidden = () => {this.state.dropDownHidden ? this.setState({dropDownHidden: false}) : this.setState({dropDownHidden: true}); window.scrollTo({top: 0, behavior: 'smooth'})}
 
   render() {
     return (
@@ -461,7 +461,7 @@ class App extends Component {
                 </div>
                 <div className="custom-options">
                   <span onClick={() => {this.setState({postFontFamily: 'Berkshire Swash', fontFamilyOptionSelected: 'Berkshire Swash'})}} className={`custom-option ${this.state.fontFamilyOptionSelected==='Berkshire Swash' ? 'selected' : ''}`} data-value="Berkshire Swash">Berkshire Swash</span>
-                  <span onClick={() => {this.setState({postFontFamily: 'Arial', fontFamilyOptionSelected: 'Arial'})}} className={`custom-option ${this.state.fontFamilyOptionSelected==='Arial' ? 'selected' : ''}`} data-value="Arial">Arial</span>
+                  <span onClick={() => {this.setState({postFontFamily: 'Verdana', fontFamilyOptionSelected: 'Verdana'})}} className={`custom-option ${this.state.fontFamilyOptionSelected==='Arial' ? 'selected' : ''}`} data-value="Verdana">Verdana</span>
                   <span onClick={() => {this.setState({postFontFamily: 'Times New Roman', fontFamilyOptionSelected: 'Times New Roman'})}} className={`custom-option ${this.state.fontFamilyOptionSelected==='Times New Roman' ? 'selected' : ''}`} data-value="Times New Roman">Times New Roman</span>
                 </div>
               </div>
