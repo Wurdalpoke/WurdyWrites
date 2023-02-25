@@ -7,6 +7,11 @@
     display: flex;
     flex-direction: row;
 }
+.list-item:hover {
+    box-shadow: 1px 2px #888;
+    transition-duration: 200ms;
+    transform: scale(0.99);
+}
 
 .list-item.dark {
     border: solid 1px white;
@@ -61,6 +66,9 @@ img {
     text-decoration: underline;
     text-align: right;
     background-image: linear-gradient(to right, transparent, white, white, white, white);
+}
+.dark .read-more {
+    background-image: linear-gradient(to right, transparent, black, black, black, black);
 }
 
 .list-item-desc a {

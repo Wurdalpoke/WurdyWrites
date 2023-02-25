@@ -31,7 +31,7 @@
 .home-page ul li:hover {
     cursor: pointer;
     transition-duration: 0.1s;
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
   
 .intro {
