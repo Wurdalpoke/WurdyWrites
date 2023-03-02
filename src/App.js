@@ -92,7 +92,7 @@ class App extends Component {
                 "This caused Germany to default (fail to pay) by the end of 1922.",
                 "",
                 "France did not take kindly to this. It didn’t take kindly to Germany in the first place (2 wars within 40 years). So France along with Belgium, the other country Germany invaded in the war, sent their troops and occupied the Ruhr valley.",
-                "What was the Ruhr valley?",
+                "Why the Ruhr valley?",
                 "This valley contained most of the forests, mines and industries of Germany.",
                 "France said fine, if you won’t cough up the money, we’ll take it at gunpoint.",
                 "",
