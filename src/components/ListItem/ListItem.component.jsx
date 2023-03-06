@@ -4,6 +4,7 @@ import WurdyWrites from '../../../src/assets/WurdyWrites.png';
 import { Link } from "react-router-dom";
 
 const ListItem = ({prop, mode}) => {
+    console.log(prop[2]);
     const windowScrolllTop = () => {window.scrollTo({top: 0, behavior: 'instant'})};
     return(
     <div className={`list-item ${mode==='dark' ? 'dark' : ''}`}>

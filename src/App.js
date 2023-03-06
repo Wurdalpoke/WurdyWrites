@@ -13,7 +13,6 @@ import LinkedInIcon from './assets/linkedin.png';
 import LinkedInIcon1 from './assets/linkedin1.png';
 import TwitterIcon from './assets/twitter-sign.png';
 import TwitterIcon1 from './assets/twitter.png';
-import Logo from './components/Logo/Logo.component';
 
 class App extends Component {
   constructor() {
@@ -44,7 +43,7 @@ class App extends Component {
                 "Before we get any further, we need to discuss just how bad Germany’s debt situation was.",
                 "",
                 "By the end of the war, the Weimar Republic, which is what Germany was known as then, had 132 billion marks in war debts. Troublesome, extremely so. But okay, could have been worse.",
-                "…Then France and Belgium demanded another 132 billion as reparations in the Treaty of Versailles.",
+                "…Then France and Belgium demanded (i)another 132 billion as reparations in the Treaty of Versailles.",
                 "",
                 "Why? Well, the war was fought mostly in France and Belgium. So although Germany lost the war, it was France and Belgium whose infrastructure had been destroyed.",
                 "This meant that Germany broke into their house, started a fight, and then lost. Naturally, they had to cough up some money in the form of reparations.",
@@ -53,7 +52,7 @@ class App extends Component {
                 "At least Germany’s territory wasn’t annexed.",
                 "",
                 "Germany’s response?",
-                "Well, Germany had started to print more money even before the war had ended (countries can print as much of their currency as they wish), to repay some debts till the war was won. Hmm.",
+                "Well, Germany had started to print more money even before the war had ended — countries can print as much of their currency as they wish — to repay some debts till the war was won. Hmm.",
                 "",
                 "This increase in the number of banknotes in the economy reduced the value of the currency with respect to foreign currencies and the Paper Mark devalued from 4.2 marks for one dollar to 7.9 marks for one dollar.",
                 "The war ended in 1918 and it became clear that Germany would have to repay the war debts by itself. So, Germany just printed more notes.",
@@ -397,10 +396,11 @@ class App extends Component {
       ],
       dropDownHidden: true,
       postFontSize: 20,
+      postWordGap: 10,
       postFontFamily: 'Verdana',
       fontFamilySelectOpen: false,
       fontFamilyOptionSelected: 'Verdana',
-      postLineHeight: 25,
+      postLineHeight: 29,
       postFontWeight: 'lighter',
       mode: 'light'
     };
@@ -438,10 +438,10 @@ class App extends Component {
           <div className="select-font-setting">
             <p className="setting">Font-Size:</p>
             <div className="options">
-              <p onClick={() => this.setState({postFontSize: 15})} className={`option ${this.state.postFontSize===15 ? ('button') : ('')}`}>15</p>
-              <p onClick={() => this.setState({postFontSize: 20})} className={`option ${this.state.postFontSize===20 ? ('button') : ('')}`}>20</p>
-              <p onClick={() => this.setState({postFontSize: 25})} className={`option ${this.state.postFontSize===25 ? ('button') : ('')}`}>25</p>
-              <p onClick={() => this.setState({postFontSize: 30})} className={`option ${this.state.postFontSize===30 ? ('button') : ('')}`}>30</p>
+              <p onClick={() => this.setState({postFontSize: 15, postWordGap: 5, postLineHeight: 25})} className={`option ${this.state.postFontSize===15 ? ('button') : ('')}`}>15</p>
+              <p onClick={() => this.setState({postFontSize: 20, postWordGap: 10, postLineHeight: 29})} className={`option ${this.state.postFontSize===20 ? ('button') : ('')}`}>20</p>
+              <p onClick={() => this.setState({postFontSize: 25, postWordGap: 18, postLineHeight: 33})} className={`option ${this.state.postFontSize===25 ? ('button') : ('')}`}>25</p>
+              <p onClick={() => this.setState({postFontSize: 30, postWordGap: 25, postLineHeight: 37})} className={`option ${this.state.postFontSize===30 ? ('button') : ('')}`}>30</p>
             </div>
           </div>
           <div className='select-font-setting'>
@@ -488,7 +488,7 @@ class App extends Component {
         {/* Routes */}
         <Routes>
           <Route path='' element={<HomePage mode={this.state.mode}/>} />
-          <Route path='/post/:id' element={<PostPage prop={this.state.posts} postFontSize={this.state.postFontSize} postFontFamily={this.state.postFontFamily} postLineHeight={this.state.postLineHeight} postFontWeight={this.state.postFontWeight} mode={this.state.mode}/>} />
+          <Route path='/post/:id' element={<PostPage prop={this.state.posts} postFontSize={this.state.postFontSize} postWordGap={this.state.postWordGap} postFontFamily={this.state.postFontFamily} postLineHeight={this.state.postLineHeight} postFontWeight={this.state.postFontWeight} mode={this.state.mode}/>} />
           <Route path='/list/:id' element={<ListPage prop={this.state.posts} mode={this.state.mode}/>} />
         </Routes>
         {/* Footer */}
