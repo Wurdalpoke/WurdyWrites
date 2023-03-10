@@ -134,14 +134,14 @@ class App extends Component {
                 "Yep. Why print 2 million notes of 100,000 marks each, when you could just print 2 notes worth 100 billion marks.",
                 "I am not even going to tell you to process this ridiculousness before proceeding further. Let me just tell you all of it.",
                 "",
-                "By then, 1 dollar was worth 4,210,500,000,000 Paper marks. Don’t bother counting, that’s 4.21 trillion marks. There’s a 50 trillion-mark-note shown on Wikipedia. There might be an even bigger denomination out there.",
+                "By then, 1 dollar was worth 4,210,500,000,000 Paper marks. Don’t bother counting, that’s 4.21 trillion marks. There’s a 50 trillion-mark-note shown on (l)'https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic'Wikipedia. There might be an even bigger denomination out there.",
                 "There were 1.2 sextillion marks in circulation by July 1924. Too many zeros.",
                 "Wanna see? Go ahead: 1,200,000,000,000,000,000,000",
                 "That’s the gist of it.(Phew)",
                 "If, somewhere in between, you stopped associating the figures above with money, that makes two of us.",
                 "",
                 '',
-                "#ComingBackFromTheDead: [solving the trillion dollar bread problem]",
+                "#ComingBackFromTheDead: [Solving the Trillion Mark bread problem]",
                 '',
                 '',
                 "The situation went from bad to… just ridiculous.",
@@ -396,7 +396,6 @@ class App extends Component {
       ],
       dropDownHidden: true,
       postFontSize: 20,
-      postWordGap: 10,
       postFontFamily: 'Verdana',
       fontFamilySelectOpen: false,
       fontFamilyOptionSelected: 'Verdana',
@@ -438,10 +437,10 @@ class App extends Component {
           <div className="select-font-setting">
             <p className="setting">Font-Size:</p>
             <div className="options">
-              <p onClick={() => this.setState({postFontSize: 15, postWordGap: 5, postLineHeight: 25})} className={`option ${this.state.postFontSize===15 ? ('button') : ('')}`}>15</p>
-              <p onClick={() => this.setState({postFontSize: 20, postWordGap: 10, postLineHeight: 29})} className={`option ${this.state.postFontSize===20 ? ('button') : ('')}`}>20</p>
-              <p onClick={() => this.setState({postFontSize: 25, postWordGap: 18, postLineHeight: 33})} className={`option ${this.state.postFontSize===25 ? ('button') : ('')}`}>25</p>
-              <p onClick={() => this.setState({postFontSize: 30, postWordGap: 25, postLineHeight: 37})} className={`option ${this.state.postFontSize===30 ? ('button') : ('')}`}>30</p>
+              <p onClick={() => this.setState({postFontSize: 15, postLineHeight: 25})} className={`option ${this.state.postFontSize===15 ? ('button') : ('')}`}>15</p>
+              <p onClick={() => this.setState({postFontSize: 20, postLineHeight: 29})} className={`option ${this.state.postFontSize===20 ? ('button') : ('')}`}>20</p>
+              <p onClick={() => this.setState({postFontSize: 25, postLineHeight: 33})} className={`option ${this.state.postFontSize===25 ? ('button') : ('')}`}>25</p>
+              <p onClick={() => this.setState({postFontSize: 30, postLineHeight: 37})} className={`option ${this.state.postFontSize===30 ? ('button') : ('')}`}>30</p>
             </div>
           </div>
           <div className='select-font-setting'>
@@ -488,7 +487,7 @@ class App extends Component {
         {/* Routes */}
         <Routes>
           <Route path='' element={<HomePage mode={this.state.mode}/>} />
-          <Route path='/post/:id' element={<PostPage prop={this.state.posts} postFontSize={this.state.postFontSize} postWordGap={this.state.postWordGap} postFontFamily={this.state.postFontFamily} postLineHeight={this.state.postLineHeight} postFontWeight={this.state.postFontWeight} mode={this.state.mode}/>} />
+          <Route path='/post/:id' element={<PostPage prop={this.state.posts} postFontSize={this.state.postFontSize} postFontFamily={this.state.postFontFamily} postLineHeight={this.state.postLineHeight} postFontWeight={this.state.postFontWeight} mode={this.state.mode}/>} />
           <Route path='/list/:id' element={<ListPage prop={this.state.posts} mode={this.state.mode}/>} />
         </Routes>
         {/* Footer */}

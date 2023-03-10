@@ -18,7 +18,15 @@ const PostPage = ({prop, postFontSize, postWordGap, postFontFamily, postLineHeig
         <p className="note">Note: You can adjust Font Settings from the 'A' icon on the header!</p>
         <div className="post-content-text">{
           postContent[0][2].map((propj, idx) => (
-            propj==='' ? (<br key={idx}></br>) : (propj[0]==='#' ? (<p className='sub-heading' key={idx}>{propj}</p>) : (<p key={idx}>{propj.split(' ').map((propk) => propk.slice(0,3)==='(i)' ? (<span style={{marginRight: '5px', fontStyle: 'italic'}}>{propk.slice(3,)}</span>) : (<span style={{marginRight: '5px'}}>{propk}</span>))}</p>))
+            propj==='' 
+            ? (<br key={idx}></br>) 
+            : (propj[0]==='#' 
+              ? (<p className='sub-heading' key={idx}>{propj}</p>) 
+              : (<p key={idx}>{propj.split(' ').map((propk) => propk.slice(0,3)==='(i)' 
+                ? (<span style={{marginRight: '8px', fontStyle: 'italic'}}>{propk.slice(3,)}</span>) 
+                : propk.slice(0,3)==='(l)' 
+                  ? (<a href={`${propk.split("'")[1]}`} target='_blank' style={{marginRight: '8px'}}>{propk.split("'")[2]}</a>) 
+                  : (<span style={{marginRight: '8px'}}>{propk}</span>))}</p>))
           ))
         }</div>
       </div>
