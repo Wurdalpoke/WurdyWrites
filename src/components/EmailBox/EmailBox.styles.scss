@@ -1,0 +1,14 @@
+.sign-up-email {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding-bottom: 100px;
+    padding-left: 10vw;
+
+    .title {
+        font-size: 18px;
+    }
+    .sub-title {
+        font-size: 14px;
+    }
+}

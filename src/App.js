@@ -4,9 +4,11 @@ import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
 
 import Header from './components/Header/Header.component';
+
 import HomePage from './pages/HomePage/HomePage.component';
 import ListPage from './pages/ListPage/ListPage.component';
 import PostPage from './pages/PostPage/PostPage.component';
+
 import SettingsIcon from './assets/letter-a1.png';
 import SettingsIcon1 from './assets/letter-a2.png';
 import LinkedInIcon from './assets/linkedin.png';

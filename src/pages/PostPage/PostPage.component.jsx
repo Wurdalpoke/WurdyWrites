@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import './PostPage.styles.css';
+import SignUpEmail from "../../components/EmailBox/EmailBox.component";
 
 const PostPage = ({prop, postFontSize, postWordGap, postFontFamily, postLineHeight, postFontWeight, mode}) => {
   let { id } = useParams();
@@ -25,10 +26,11 @@ const PostPage = ({prop, postFontSize, postWordGap, postFontFamily, postLineHeig
               : (<p key={idx}>{propj.split(' ').map((propk) => propk.slice(0,3)==='(i)' 
                 ? (<span style={{marginRight: '8px', fontStyle: 'italic'}}>{propk.slice(3,)}</span>) 
                 : propk.slice(0,3)==='(l)' 
-                  ? (<a href={`${propk.split("'")[1]}`} target='_blank' style={{marginRight: '8px'}}>{propk.split("'")[2]}</a>) 
+                  ? (<a href={`${propk.split("'")[1]}`} target='_blank' rel="noreferrer" style={{marginRight: '8px'}}>{propk.split("'")[2]}</a>) 
                   : (<span style={{marginRight: '8px'}}>{propk}</span>))}</p>))
           ))
         }</div>
+        <SignUpEmail />
       </div>
     </section>
   ) 
